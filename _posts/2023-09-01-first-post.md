@@ -1,4 +1,3 @@
-2023-09-01-first-post.md
 layout: post
 title:  "Practice Post"
 author: Spencer Fong
