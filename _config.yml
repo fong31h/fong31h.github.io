@@ -23,7 +23,7 @@ email: fongspe28@gmail.com
 description: "I will make at least one blog post about data science for my class"
 baseurl: "/stat386-blog-theme" # the name of the repository 
 url: "https://fong31h.github.io" #  change this to "https://<your-github-username>.github.io"
-image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.si.com%2Fmlb%2F2023%2F08%2F18%2Fgiants-logan-webb-workhorse-innings-leader-mlb&psig=AOvVaw0N_FGFPEC-v3QF8Xz0Qm_5&ust=1695922849256000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCIjrkYqry4EDFQAAAAAdAAAAABAE
+image: https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MjAwMTU2NDI5NTAyMzkxNDA0/logan-webb.jpg
 author: Spencer Fong
 copyright: SF # Your initials or what you want the copyright to be.  Leave empty for no copyright
 footer_description: 'The above image is of Logan Webb, starting pitcher and ace for the San Francisco Giants of Major League Baseball'
