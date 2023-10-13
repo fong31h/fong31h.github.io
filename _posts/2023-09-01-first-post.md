@@ -3,6 +3,6 @@ layout: post
 title:  "Practice Post"
 author: Spencer Fong
 description: Practice publishing a post without real info
-image: "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4345843.png"
+image: "/assets/images/bailey.png"
 ---
 Hello World!
