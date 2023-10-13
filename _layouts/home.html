@@ -34,7 +34,7 @@ layout: default
       {%- for post in site.posts -%}
       <li>
         {%- if post.image -%}
-          <img src="{{- post.image | relative_url -}}" alt="" class="blog-roll-image">
+          <img src="{{- post.image | base_url -}}" alt="" class="blog-roll-image">
         {%- else -%}
           {%- assign postImage = "https://source.unsplash.com/random" -%}
           <img src="{{- postImage -}}" alt="" class="blog-roll-image">
@@ -47,7 +47,7 @@ layout: default
          <span class="post-meta">   •  {{ words | divided_by:180 }} min read</span>
       {%- endunless -%}
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link" href="{{ post.url | base_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
