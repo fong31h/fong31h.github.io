@@ -34,7 +34,7 @@ First, let’s pretend that you can represent an animal using three numbers, bet
 
 First step is to create our neural_network class. This class has no attributes so we can ‘pass’ the ‘__init__’ function. Next step is to create the neurons. I’m creating three, with three inputs, so the network looks something like this.
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/eximagenn.png" alt="" style="width:200px;"/>
+![Network](/assets/images/eximagenn.png)
 
 Here’s the code for the neurons.
 
