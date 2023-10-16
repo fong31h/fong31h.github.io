@@ -30,4 +30,4 @@ Okay, so now that we understand what a neural network is basically doing, let’
 
 First, let’s pretend that you can represent an animal using three numbers, between 0 and 1. The first number represents the legs, the second number represents the ears, and the last number represents the tail. We are going to pass a list of these three numbers into our neural network we create and see if it decides that the list represents a cat, a dog, or neither.
 
- ![Python](/assets/images/'pic 1.png')
+ ![Python](/assets/images/pic1.png)
