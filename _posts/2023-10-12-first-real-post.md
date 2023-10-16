@@ -7,6 +7,8 @@ image: "/assets/images/nn.png"
 ---
 ## How to Understand and Set Up a Basic Neural Network
 
+# Intro
+
 Like the rest of the world, I noticed a large uptake in discourse and media attention surrounding artificial intelligence after the free release of ChatGPT 3 in November 2022. As a university student studying statistics and data science, I’ve always vaguely understood that AI is connected to the field I am training in, but never understood how, or why. That’s why I chose to research this topic for my first blog post about data science. I ended up choosing to write specifically about neural networks, since that is a term I had heard before and wondered about, and is also the basis for popular generative AI like ChatGPT.
 In this blog post, I’m going to dive into the topic, break it down very simply, and include instructions for visualizing these concepts in the programming language Python.
 
@@ -28,4 +30,4 @@ Okay, so now that we understand what a neural network is basically doing, let’
 
 First, let’s pretend that you can represent an animal using three numbers, between 0 and 1. The first number represents the legs, the second number represents the ears, and the last number represents the tail. We are going to pass a list of these three numbers into our neural network we create and see if it decides that the list represents a cat, a dog, or neither.
 
- ![Figure]({{site.url}}/{{site.baseurl}}/assets/images/pic 1.png)
+ {% raw %}![Figure]({{site.url}}/{{site.baseurl}}/assets/images/pic 1.png){% endraw %}
