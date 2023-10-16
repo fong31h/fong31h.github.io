@@ -31,3 +31,25 @@ Okay, so now that we understand what a neural network is basically doing, let’
 First, let’s pretend that you can represent an animal using three numbers, between 0 and 1. The first number represents the legs, the second number represents the ears, and the last number represents the tail. We are going to pass a list of these three numbers into our neural network we create and see if it decides that the list represents a cat, a dog, or neither.
 
  ![Python](/assets/images/pic1.png)
+
+First step is to create our neural_network class. This class has no attributes so we can ‘pass’ the ‘__init__’ function. Next step is to create the neurons. I’m creating three, with three inputs, so the network looks something like this.
+
+![Network](/assets/images/eximagenn.png)
+
+Here’s the code for the neurons.
+
+![Neurons](/assets/images/neurons.png)
+
+Each neuron is receiving all three inputs, but two are being zeroed out by the weights, so each neuron only represents one section of the input. A bias of .5 is being added so that these neurons will only activate if they exceed that.
+
+Now we want to run our network. To choose the output, I’ve created a simple process that chooses based on how many neurons activated.
+
+![Run](/assets/images/runnetwork.png)
+
+So I bet you can guess what the ouput will be for this code.
+
+![codeex](/assets/images/codeex.png)
+
+![dog](/assets/images/isadog.png)
+
+Good job! Now you can grasp what goes on in a simple neural network. Real world applications become much more complicated, but the principle of sectioning off input with weights, passing it through neurons to see if they activate, and then deciding the most probabilistic outcome is generally how they function.
