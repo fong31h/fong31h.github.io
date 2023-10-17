@@ -46,7 +46,7 @@ Here’s the code for the neurons.
 
 ![Neurons](/assets/images/neurons.png)
 
-Each neuron is receiving all three inputs, but two are being zeroed out by the weights, so each neuron only represents one section of the input (in this case, one body part) A bias of .5 is being subtracted so that these neurons will only activate if they exceed that. Remember, the purpose of the bias is to add a minimum level that must be reached for the neuron to activate. This way, the neuron is protected from activation from input that is not sufficiently important. In the context of this problem, the function of neuron_3_tail bias could be to filter out animals that have a small tail, like a bear, but don't fit in a category with a cat, or a monkey.
+Each neuron is receiving all three inputs, but two are being zeroed out by the weights, so each neuron only represents one section of the input (in this case, one body part) A bias of .5 is being subtracted so that these neurons will only activate if they exceed that. Remember, the purpose of the bias is to add a minimum level that must be reached for the neuron to activate. This way, the neuron is protected from activation by input that is not sufficiently important. In the context of this problem, the function of the neuron_3_tail bias could be to filter out animals that have a small tail, like a bear, but don't fit in a category with a cat, or a monkey.
 
 It's also important to note that I'm setting the weights and biases by hand. I'm choosing arbitrary values just to demonstrate the funcionality of a neuron, these numbers don't really mean anything.
 
@@ -65,4 +65,6 @@ So I bet you can guess what the ouput will be for this code.
 Good job! Now you can grasp what goes on in a simple neural network. Real world applications become much more complicated, but the principle of sectioning off input with weights, passing it through neurons to see if they activate, and then deciding the most probabilistic outcome is generally how they function.
 
 If you are interested in learning more, check out this Youtube video I used while learning about this subject. There is a whole series on neural networks that goes very in depth.
-https://youtu.be/aircAruvnKk?si=zqvPFiH46u5yNNF8
+
+[But what is a neural network? | Chapter 1, Deep learning]{https://youtu.be/aircAruvnKk?si=zqvPFiH46u5yNNF8}
+
