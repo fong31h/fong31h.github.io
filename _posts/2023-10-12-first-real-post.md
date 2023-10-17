@@ -7,6 +7,8 @@ image: "/assets/images/nn.png"
 ---
 ## How to Understand and Set Up a Basic Neural Network
 
+![network](/assets/images/nn.png)
+
 # Intro
 
 Like the rest of the world, I noticed a large uptake in discourse and media attention surrounding artificial intelligence after the free release of ChatGPT 3 in November 2022. As a university student studying statistics and data science, I’ve always vaguely understood that AI is connected to the field I am training in, but never understood how, or why. That’s why I chose to research this topic for my first blog post about data science. I ended up choosing to write specifically about neural networks, since that is a term I had heard before and wondered about, and is also the basis for popular generative AI like ChatGPT.
@@ -30,9 +32,13 @@ Okay, so now that we understand what a neural network is basically doing, let’
 
 First, let’s pretend that you can represent an animal using three numbers, between 0 and 1. The first number represents the legs, the second number represents the ears, and the last number represents the tail. We are going to pass a list of these three numbers into our neural network we create and see if it decides that the list represents a cat, a dog, or neither.
 
- ![Python](/assets/images/pic1.png)
+![list](/assets/images/listex.png)
 
-First step is to create our neural_network class. This class has no attributes so we can ‘pass’ the ‘__init__’ function. Next step is to create the neurons. I’m creating three, with three inputs, so the network looks something like this.
+First step is to create our neural_network class.
+
+![Python](/assets/images/pic1.png)
+
+This class has no attributes so we can ‘pass’ the ‘__init__’ function. Next step is to create the neurons. I’m creating three, with three inputs, so the network looks something like this.
 
 ![Network](/assets/images/eximagenn.png)
 
@@ -40,7 +46,9 @@ Here’s the code for the neurons.
 
 ![Neurons](/assets/images/neurons.png)
 
-Each neuron is receiving all three inputs, but two are being zeroed out by the weights, so each neuron only represents one section of the input. A bias of .5 is being added so that these neurons will only activate if they exceed that.
+Each neuron is receiving all three inputs, but two are being zeroed out by the weights, so each neuron only represents one section of the input (in this case, one body part) A bias of .5 is being subtracted so that these neurons will only activate if they exceed that. Remember, the purpose of the bias is to add a minimum level that must be reached for the neuron to activate. This way, the neuron is protected from activation from input that is not sufficiently important. In the context of this problem, the function of neuron_3_tail bias could be to filter out animals that have a small tail, like a bear, but don't fit in a category with a cat, or a monkey.
+
+It's also important to note that I'm setting the weights and biases by hand. I'm choosing arbitrary values just to demonstrate the funcionality of a neuron, these numbers don't really mean anything.
 
 Now we want to run our network. To choose the output, I’ve created a simple process that chooses based on how many neurons activated.
 
@@ -52,4 +60,9 @@ So I bet you can guess what the ouput will be for this code.
 
 ![dog](/assets/images/isadog.png)
 
+# Conclusion
+
 Good job! Now you can grasp what goes on in a simple neural network. Real world applications become much more complicated, but the principle of sectioning off input with weights, passing it through neurons to see if they activate, and then deciding the most probabilistic outcome is generally how they function.
+
+If you are interested in learning more, check out this Youtube video I used while learning about this subject. There is a whole series on neural networks that goes very in depth.
+https://youtu.be/aircAruvnKk?si=zqvPFiH46u5yNNF8
