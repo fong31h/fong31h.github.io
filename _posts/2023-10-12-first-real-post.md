@@ -66,5 +66,5 @@ Good job! Now you can grasp what goes on in a simple neural network. Real world 
 
 If you are interested in learning more, check out this Youtube video I used while learning about this subject. There is a whole series on neural networks that goes very in depth.
 
-[But what is a neural network? | Chapter 1, Deep learning]{https://youtu.be/aircAruvnKk?si=zqvPFiH46u5yNNF8}
+[But what is a neural network? | Chapter 1, Deep learning](https://youtu.be/aircAruvnKk?si=zqvPFiH46u5yNNF8)
 

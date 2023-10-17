@@ -35,7 +35,7 @@ To create a link (internal or external), enclose the link text in brackets (e.g.
 
 For example:
 ```
-{% raw %}My favorite department at BYU is the [Statistics Department](https://statistics.byu.edu).{% endraw %}
+{% raw %}My favorite department at BYU is the [Statistics Department](https://statistics.byu.edu).{% raw %}
 ```
 My favorite department at BYU is the [Statistics Department](https://statistics.byu.edu)
 
