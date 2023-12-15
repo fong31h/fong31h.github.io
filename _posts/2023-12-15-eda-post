@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "Musical Artists: EDA"
+author: Spencer Fong
+description: An exploratory data analysis of my musical artists data
+image: "/assets/images/bts.jpeg"
+---
+![lana](/assets/images/lana.webp)
+
+## Examining the Numbers on Music (EDA)
+
+### Intro
+
+In this blog post I will be showing some of the process that I went through and some of the insights that I gained in my exploratory data analysis of the musical artists data set.
+
+The questions that I approached this data set with was which factors play the biggest role in determining artist popularity. To that end, I examined the genre, age, and sex of the artists to see if there was any correlation between these different factors and the popularity measurement, listeners.
+
+In my previous blog post I walked through the process of gathering and cleaning the data. Feel free to check it out <a href="https://fong31h.github.io/2023/12/14/data-collection-post.html" target="_blank">here</a>.
+
+### Examining Age vs Popularity
+
+![age_listeners](/assets/images/age_listeners_sex.jpg)
+
+In this first graph we see a pretty clear correlation between age and listeners. I also colored the points by sex so we can get a better understanding of the data in general.
+
+Based on this graph it seems like as age increases, listeners increases also. In some ways this would make sense, as the longer an artists makes music, the more fans they will acquire.
+
+### Examining Sex vs Popularity
+
+For some musical artists, categorizing the sex was simple, however for musical groups, I decided to categorize them as either 'mb' for male band, 'fb' for female band, and 'mfb' for male/female band. If a band (or group) included at least one male and one female I categorized them as 'mfb'.
+
+![listeners_sex](/assets/images/listeners_sex.jpg)
+
+In this box plot I looked at listeners vs sex. On the surface, it appears that sex is an influential factor in deciding listeners. Of note, is that male bands are more popular than female bands, but female solo artists and more popular than male solo artists. Although it appears that sex has an effect on listeners, while exploring the data futher I discovered that the differences according to sex might just be because of age.
+
+![age_sex](/assets/images/sex_age.jpg)
+
+Comparing the age vs sex plot and the listeners vs sex plot reveals that any difference in listeners according to sex might just be the result of a difference in age, as the plots match up almost perfectly.
+
+### Examining Genre vs Popularity
+
+Even with extensive trimming of genres, there are still too many to examine them all effectively. So instead, I chose the ten most common genres and examined them. The box plot here shows the twenty most common and their counts, although I only examined the top ten in greater depth.
+
+![genres_bar](/assets/images/genresbarplot.jpg)
+
+Similar to the previous sections, I compared listeners to genre.
+
+![genres_listeners](/assets/images/genres_listeners.jpg)
+
+Once again, it seems like there is significant variability in popularity between genres, which would imply that genre plays a role in determining popularity. In this case, the genres alternative and rock are the most popular, although pop and rnb both have similar levels of popularity for their top artists, but a larger amount of low popularity artists that bring their average down.
+
+Just like with sex, I wanted to examine genre vs age to see if the differences in popularity can be attributed to age rather than genre.
+
+![genres_age](/assets/images/genre_age.jpeg)
+
+Once again, we see some striking similarities between the two plots, implying that most of the difference in genre is explained by age. One thing worth noting though, is that rnb seems to break this trend somewhat, with a relatively young artist core, but a higher level of popularity. So it seems that genre can play a role in popularity.
+
+### Conclusion
+
+In this blog post, I explored the relationship between listeners and several different possible explainer variables. Although I cannot make any conclusive statements without running statistical tests, it seems that age is the biggest factor in popularity of musical artists, at least out of the three factors that I have access to.
+
+It's worth noting that in interest of space on this post, I did not explore playcount, which is another important measure of popularity. If you wish to see more information about that, check out my streamlit dashboard.
+
+<a href="https://stat386finalproject-7tr6hrcyblxbmipa6cm5fd.streamlit.app/" target="_blank">https://stat386finalproject-7tr6hrcyblxbmipa6cm5fd.streamlit.app/</a>
+
+Feel free to check out the GitHub repository also.
+
+<a href="https://github.com/fong31h/Stat386_Final_Project" target="_blank">Musical Artists Final Project</a>

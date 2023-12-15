@@ -5,7 +5,7 @@ author: Spencer Fong
 description: A documentation of the data collection process for my Stat 386 final project
 image: "/assets/images/taylorswift.jpeg"
 ---
-![last.fm](/assets/images/musicchart.webp)
+![music_chart](/assets/images/musicchart.webp)
 ## Examining the Numbers on Music (Data Collection and Cleaning)
 
 ### Intro
@@ -30,11 +30,11 @@ The next step was actually writing a call that could get me the data that I need
 
 ### Step 3: Cleaning the Data
 
-At this point, I had the data, but I just had to organize and clean it. This ended up being a lengthy process. The data was structured in an intricate, multi-layered tangle that required extensive testing and exploration in order to understand. Each artists info was contained inside a dictionary, which contained another dictionary, which contained a list of dictionaries, which contained more dictionaries (that's not even an exaggeration). With the help of for loops and list comprehensions, I eventually managed to get the majority of it into a data frame.
+At this point, I had the data, so I just had to organize and clean it. This ended up being a lengthy process. The data was structured in an intricate, multi-layered tangle that required extensive testing and exploration in order to understand. Each artists info was contained inside a dictionary, which contained another dictionary, which contained a list of dictionaries, which contained more dictionaries (that's not even an exaggeration). With the help of for loops and list comprehensions, I eventually managed to get the majority of it into a data frame.
 
-One aspect that was particularly tricky though, was genre. Since each artist had between 3-6 different genres attached to their name, I had to choose how I wanted to structure it in the final data frame. There were also dozens of genres that were obscure or rare that I didn't want to use. Lastly the genres all had different spellings, so one artist might be 'hip hop', while another one was 'Hip-hop'. Eventaully though, I was able to solve these problems and create three columns so that each artist had three genres associated with them.
+One aspect that was particularly tricky though, was genre. Since each artist had between 3-6 different genres attached to their name, I had to choose how I wanted to structure it in the final data frame. There were also dozens of genres that were obscure or rare that I didn't want to use. Lastly the genres all had different spellings, so one artist might be 'hip hop', while another one was 'Hip-hop', and so on. Eventaully though, I was able to solve these problems and I created three columns so that each artist had three genres associated with them.
 
-Unfortunately, the last.fm API was missing two pieces of information that I felt would be very useful for analysis: sex, and age. I ended up using wikipedia to get this information manually, which took a couple of hours.
+Unfortunately, the last.fm API was missing two pieces of information that I felt would be very useful for analysis: sex, and age. I ended up using Wikipedia to get this information manually, which took a couple of hours.
 
 ### Ethical Considerations, Conclusion, Link
 
