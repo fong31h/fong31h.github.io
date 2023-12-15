@@ -3,7 +3,7 @@ layout: post
 title:  "Musical Artists: Data Collection and Cleaning"
 author: Spencer Fong
 description: A documentation of the data collection process for my Stat 386 final project
-image: "/assets/images/taylorswift.jpeg"
+image: "/assets/images/musicchart.webp"
 ---
 ![music_chart](/assets/images/musicchart.webp)
 ## Examining the Numbers on Music (Data Collection and Cleaning)
