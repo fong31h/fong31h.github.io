@@ -5,7 +5,7 @@ author: Spencer Fong
 description: A documentation of the data collection process for my Stat 386 final project
 image: "/assets/images/taylorswift.jpeg"
 ---
-![last.fm](/assets/images/lastfmlogo.png)
+![last.fm](/assets/images/musicchart.webp)
 ## Examining the Numbers on Music (Data Collection and Cleaning)
 
 ### Intro
